@@ -1,0 +1,7 @@
+h1{
+    color: red;
+}
+
+.djangtwo table,th,td {
+    border: 1px solid #000;
+}

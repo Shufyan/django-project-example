@@ -1,0 +1,14 @@
+{% extends "AppTwo/base.html" %}
+{% load staticfiles %}
+
+{% block body_block %}
+    <div class="container">
+        <div class="jumbotron">
+            <a href="{% url 'AppTwo:signup' %}">Sign up</a> | 
+            <a href="{% url 'admin:index' %}">Goto Admin</a> |
+            <a href="{% url 'index' %}">Goto Index</a>
+            <h1>Hi, I am Asad. How are you?</h1>            
+            <img src="{% static 'images/Asad_White.jpg' %}" alt="Uh ho, I am not loaded!">
+        </div>    
+    </div>
+{% endblock %}

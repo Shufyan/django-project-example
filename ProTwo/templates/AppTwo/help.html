@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "AppTwo/base.html" %}
+{% load staticfiles %}
+
+{% block body_block %}
+    <h1>{{help_text}}</h1>
+    <h1>{{text|upper}}</h1>
+    <h1>{{text|cut:'hello'}}</h1>
+    <h1>{{number|add:"99"}}</h1>
+{% endblock %}
